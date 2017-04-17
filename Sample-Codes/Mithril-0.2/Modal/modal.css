@@ -1,0 +1,126 @@
+.mmd-btn {
+  background: #428bca;
+  border: #357ebd solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right: 3px;
+  transition: color .1s ease;
+  /* top: 40em;*/
+}
+.mmd-btn:hover {
+  background: #357ebd;
+}
+.mmd-btn.mmd-btn-big {
+  font-size: 18px;
+  padding: 15px 20px;
+  min-width: 100px;
+}
+.mmd-btn-red {
+  background: #ffb3b3;
+  border: #ff9a9a solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right: 3px;
+  transition: color .1s ease;
+  /* top: 40em;*/
+}
+.mmd-btn-red:hover {
+  background: #ff9a9a;
+}
+.mmd-btn-red.mmd-btn-big {
+  font-size: 18px;
+  padding: 15px 20px;
+  min-width: 100px;
+}
+.mmd-btn-gray {
+  background: #aaa;
+  border: #9d9d9d solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right: 3px;
+  transition: color .1s ease;
+  /* top: 40em;*/
+}
+.mmd-btn-gray:hover {
+  background: #9d9d9d;
+}
+.mmd-btn-gray.mmd-btn-big {
+  font-size: 18px;
+  padding: 15px 20px;
+  min-width: 100px;
+}
+.mmd-modal {
+  opacity: 1;
+}
+.mmd-modal:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.mmd-modal-dialog {
+  background: #fefefe;
+  border: #aaa solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  z-index: 11;
+  width: 360px;
+}
+.mmd-modal-body {
+  padding: 20px;
+}
+.mmd-modal-header,
+.mmd-modal-footer {
+  padding: 10px 20px;
+}
+.mmd-modal-header {
+  border-bottom: #eee solid 1px;
+}
+.mmd-modal-header h2 {
+  font-size: 20px;
+}
+.mmd-modal-footer {
+  border-top: #eee solid 1px;
+  text-align: right;
+}
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none;
+}
+.mmd-fadeout {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "modal-demo-ts",
+  "version": "1.0.0",
+  "description": "Mithril 0.2 Modal Dialog Typescript Demo",
+  "main": "orig-modal.js",
+  "scripts": {
+    "build": "lessc modal.less > modal.css && tsc && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "devDependencies": {
+    "@types/mithril": "^0.0.31"
+  },
+  "author": "Manabu Tokunaga",
+  "license": "ISC"
+}

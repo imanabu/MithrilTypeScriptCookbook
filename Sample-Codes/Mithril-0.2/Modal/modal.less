@@ -1,0 +1,174 @@
+// Largely copied from http://codepen.io/maccadb7/pen/nbHEg
+//
+// Variables
+// ----------------------
+
+@gray: #aaa;
+@gray-light: #aaa;
+@gray-lighter: #eee;
+@gray-dark: darken(@gray, 5%);
+@space: 40px;
+@blue: #428bca;
+@blue-dark: darken(@blue, 5%);
+@red: #ffb3b3;
+@red-dark:darken(@red, 5%);
+@fadeOutDuration: 0.5s;
+
+// Btn 
+// ----------------------
+
+.mmd-btn {
+  background: @blue;
+  border: @blue-dark solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right: 3px;
+  transition: color .1s ease;
+ /* top: 40em;*/
+  
+  &:hover{
+    background: @blue-dark;
+  }
+  
+  &.mmd-btn-big{
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+}
+
+.mmd-btn-red {
+  background: @red;
+  border: @red-dark solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right:3px;
+  transition: color .1s ease;
+ /* top: 40em;*/
+  
+  &:hover{
+    background: @red-dark;
+  }
+  
+  &.mmd-btn-big{
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+}
+
+.mmd-btn-gray {
+  background: @gray;
+  border: @gray-dark solid 1px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  margin-right:3px;
+  transition: color .1s ease;
+ /* top: 40em;*/
+  
+  &:hover{
+    background: @gray-dark;
+  }
+  
+  &.mmd-btn-big{
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+  }
+  
+}
+
+//
+// Modal
+// ----------------------
+
+.mmd-modal{
+   opacity: 1;
+  
+  // This is modal bg
+  &:before{
+    content: ""; 
+    //display: none;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+  }  
+}
+
+// Modal Dialog
+// ----------------------
+
+.mmd-modal-dialog{
+  background: #fefefe;
+  border: @gray solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed; 
+  left: 50%;  
+  z-index: 11; 
+  width: 360px;
+}
+
+.mmd-modal-body{
+  padding: @space/2;
+}
+
+.mmd-modal-header,
+.mmd-modal-footer{
+  padding: @space/4 @space/2;
+}
+
+.mmd-modal-header{
+  border-bottom: @gray-lighter solid 1px;
+  
+  h2{
+    font-size: 20px;
+  }
+  
+}
+
+.mmd-modal-footer{
+  border-top: @gray-lighter solid 1px;
+  text-align: right;
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none; 
+}
+
+.mmd-fadeout {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+-webkit-transition: all @fadeOutDuration ease;
+  -moz-transition: all @fadeOutDuration ease;
+  -ms-transition: all @fadeOutDuration ease;
+  -o-transition: all @fadeOutDuration ease;
+  transition: all @fadeOutDuration ease;
+}
+
